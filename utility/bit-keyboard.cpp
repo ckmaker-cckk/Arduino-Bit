@@ -1,5 +1,5 @@
 #include "bit-keyboard.h"
-#include "bit.h"
+#include "ckmaker-bit.h"
 
 bool keyboardClass::keyState(uint8_t key,uint8_t info)
 {
@@ -11,11 +11,11 @@ bool keyboardClass::keyState(uint8_t key,uint8_t info)
 }
 bool keyboardClass::keyState(uint8_t key)
 {
-    return  keyState(key,BIT_KB_SHORT_RELEASE);
+    return  keyState(key,BIT_CLICK);
 }
 uint16_t keyboardClass::allKeyState(uint8_t info)
 {
-    if(info<=BIT_KB_LONG_HOLD)
+    if(info<=BIT_LONG_HOLD)
     {
         return  bitReadReg16(BIT_KEYBOARD_ADD,info+REG_KB_ALLKEY_SHORT_RELEASE); 
     }
@@ -23,7 +23,7 @@ uint16_t keyboardClass::allKeyState(uint8_t info)
 }
 uint16_t keyboardClass::allKeyState()
 {
-    return allKeyState(BIT_KB_SHORT_RELEASE);    
+    return allKeyState(BIT_CLICK);    
 }
 
 

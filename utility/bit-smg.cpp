@@ -1,5 +1,5 @@
 #include "bit-smg.h"
-#include "bit.h"
+#include "ckmaker-bit.h"
 
 void smgClass::setDisMode(uint8_t mode)
 {

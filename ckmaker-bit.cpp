@@ -1,4 +1,4 @@
-#include "bit.h"
+#include "ckmaker-bit.h"
 
 
 void bitClass::begin()

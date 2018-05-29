@@ -1,5 +1,5 @@
 #include "bit-yaogan.h"
-#include "bit.h"
+#include "ckmaker-bit.h"
 
 uint8_t yaoganClass::getValue(uint8_t xy)
 {

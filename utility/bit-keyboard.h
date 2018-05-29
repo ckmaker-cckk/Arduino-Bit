@@ -79,10 +79,6 @@
 #define BIT_KB_KEYE     0X0E
 #define BIT_KB_KEYF     0X0F
 
-#define BIT_KB_SHORT_RELEASE    0X00  
-#define BIT_KB_LONG_RELEASE     0X01
-#define BIT_KB_LONG_HOLD        0X02
-
 
 
 class keyboardClass

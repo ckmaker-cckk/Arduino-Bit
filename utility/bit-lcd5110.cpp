@@ -1,5 +1,5 @@
 #include "bit-keyboard.h"
-#include "bit.h"
+#include "ckmaker-bit.h"
 
 lcd5110Class lcd5110;
 
