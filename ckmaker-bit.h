@@ -29,6 +29,8 @@ public:
 #define BIT_LONG_HOLD      0X02
 
 
+extern bitClass bit;
+
 void  bitwriteReg(uint8_t add,uint8_t reg);
 void  bitwriteReg(uint8_t add,uint8_t reg,uint8_t length,uint8_t *buf);
 void bitwriteRegNoLength(uint8_t add,uint8_t reg,uint8_t length,uint8_t *buf);

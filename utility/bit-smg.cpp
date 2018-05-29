@@ -5,12 +5,12 @@ void smgClass::setDisMode(uint8_t mode)
 {
     bitwriteRegNoLength(BIT_SMG_ADD,REG_SMG_DIS_MODE,1,&mode);              
 }
-void smgClass::setNormalDisNumber(uint8_t length,uint8_t *s)
+void smgClass::setNormalDisValue(uint8_t length,uint8_t *s)
 {
 
     bitwriteReg(BIT_SMG_ADD,REG_SMG_NORMAL_DIS_DATA,length,s);
 }
-void smgClass::setRollDisNumber(uint8_t length,uint8_t *s)
+void smgClass::setRollDisValue(uint8_t length,uint8_t *s)
 {
     bitwriteReg(BIT_SMG_ADD,REG_SMG_ROLL_DIS_DATA,length,s);  
 }

@@ -26,8 +26,8 @@ class smgClass
 {
     public:
         void setDisMode(uint8_t mode);
-        void setNormalDisNumber(uint8_t length,uint8_t *s);
-        void setRollDisNumber(uint8_t length,uint8_t *s);				
+        void setNormalDisValue(uint8_t length,uint8_t *s);
+        void setRollDisValue(uint8_t length,uint8_t *s);				
         void setLighteness(uint8_t l);
         void setOneBitNumber(uint8_t s,uint8_t d);
         void setOneBitCode(uint8_t s,uint8_t d);               

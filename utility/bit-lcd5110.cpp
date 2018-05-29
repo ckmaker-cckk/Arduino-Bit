@@ -6,26 +6,32 @@ lcd5110Class lcd5110;
 void lcd5110Class::disVersionMode()
 {
     bitwriteReg(BIT_LCD5110_ADD,REG_5110_SOFT_VER);
+    delay(60);
 }
 void lcd5110Class::drawMode()
 {
     bitwriteReg(BIT_LCD5110_ADD,REG_5110_DRAW);
+    delay(60);
 }
 void lcd5110Class::menuMode()
 {
-    bitwriteReg(BIT_LCD5110_ADD,REG_5110_MENU);    
+    bitwriteReg(BIT_LCD5110_ADD,REG_5110_MENU);
+    delay(60);    
 }
 void lcd5110Class::game1Mode(uint8_t ballsize)
 {
-    bitwriteRegNoLength(BIT_LCD5110_ADD,REG_5110_GAME1,1,&ballsize);        
+    bitwriteRegNoLength(BIT_LCD5110_ADD,REG_5110_GAME1,1,&ballsize);
+    delay(60);        
 }
 void lcd5110Class::game2Mode(uint8_t level)
 {
-    bitwriteRegNoLength(BIT_LCD5110_ADD,REG_5110_GAME2,1,&level);        
+    bitwriteRegNoLength(BIT_LCD5110_ADD,REG_5110_GAME2,1,&level);
+    delay(60);        
 }
 void lcd5110Class::game3Mode(uint8_t level)
 {
-    bitwriteRegNoLength(BIT_LCD5110_ADD,REG_5110_GAME3,1,&level);        
+    bitwriteRegNoLength(BIT_LCD5110_ADD,REG_5110_GAME3,1,&level); 
+    delay(60);       
 }
 void lcd5110Class::ScreensaverMode()
 {
